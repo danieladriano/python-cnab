@@ -190,6 +190,11 @@ class Arquivo(object):
                 tipo_segmento = linha[13]
                 codigo_evento = linha[15:17]
 
+                # CEF - Codigo 28 débito de tarifas / custas
+                # Não esta tratando retorno desse tipo de evento
+                if codigo_evento == '28':
+                    continue
+
                 if tipo_segmento == 'T':
                     seg_t = self.banco.registros.SegmentoT()
                     seg_t.carregar(linha)
@@ -212,7 +217,10 @@ class Arquivo(object):
                     evento_aberto = Evento(self.banco, int(codigo_evento))
                     lote_aberto._eventos.append(evento_aberto)
                     evento_aberto._segmentos.append(seg_e)
-
+                elif tipo_segmento == 'W':
+                    seg_w = self.banco.registros.SegmentoW()
+                    seg_w.carregar(linha)
+                    evento_aberto._segmentos.append(seg_w)
             elif tipo_registro == '5':
                 if trailer_lote is not None:
                     lote_aberto.trailer.carregar(linha)
@@ -241,6 +249,10 @@ class Arquivo(object):
         seg_r = self.banco.registros.SegmentoR(**kwargs)
         if seg_r.necessario():
             evento.adicionar_segmento(seg_r)
+
+        seg_s = self.banco.registros.SegmentoS(**kwargs)
+        if seg_s.necessario():
+            evento.adicionar_segmento(seg_s)
 
         lote_cobranca = self.encontrar_lote(codigo_evento)
 

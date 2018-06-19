@@ -1,0 +1,115 @@
+{
+  "nome": "SegmentoS",
+  "campos": {
+    "01.3Y": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 104
+    },
+
+    "02.3Y": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.3Y": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+
+    "04.3Y": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+
+    "05.3Y": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "S"
+    },
+
+    "06.3Y": {
+      "nome": "cnab_exclusivo_campo06dot3Y",
+      "posicao_inicio": 15,
+      "posicao_fim": 15,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "07.3Y": {
+      "nome": "servico_codigoMovimento",
+      "posicao_inicio": 16,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+
+    "08.3Y": {
+      "nome": "boleto_personalisado",
+      "posicao_inicio": 18,
+      "posicao_fim": 19,
+      "formato": "num",
+      "default": 10
+    },
+
+    "09.3Y": {
+      "nome": "tipo_registro",
+      "posicao_inicio": 20,
+      "posicao_fim": 20,
+      "formato": "num",
+      "default": 1
+    },
+
+    "10.3Y": {
+      "nome": "ddd_beneficiario",
+      "posicao_inicio": 21,
+      "posicao_fim": 23,
+      "formato": "num"
+    },
+
+    "11.3Y": {
+      "nome": "telefone_beneficiario",
+      "posicao_inicio": 24,
+      "posicao_fim": 33,
+      "formato": "num"
+    },
+
+    "12.3Y": {
+      "nome": "ddd_pagador",
+      "posicao_inicio": 34,
+      "posicao_fim": 36,
+      "formato": "num"
+    },
+
+    "13.3Y": {
+      "nome": "telefone_pagador",
+      "posicao_inicio": 37,
+      "posicao_fim": 46,
+      "formato": "num"
+    },
+
+    "14.3Y": {
+      "nome": "ddd_avalista",
+      "posicao_inicio": 47,
+      "posicao_fim": 49,
+      "formato": "num"
+    },
+
+    "15.3Y": {
+      "nome": "telefone_avalista",
+      "posicao_inicio": 50,
+      "posicao_fim": 59,
+      "formato": "num"
+    }
+  }
+}

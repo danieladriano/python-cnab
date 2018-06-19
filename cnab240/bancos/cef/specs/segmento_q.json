@@ -142,8 +142,7 @@
       "nome": "banco_correspondente",
       "posicao_inicio": 210,
       "posicao_fim": 212,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num"
     },
 
     "21.3Q": {

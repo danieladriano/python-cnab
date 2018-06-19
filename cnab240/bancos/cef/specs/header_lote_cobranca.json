@@ -51,7 +51,7 @@
       "posicao_inicio": 14,
       "posicao_fim": 16,
       "formato": "num",
-      "default": 30
+      "default": 60
     },
 
     "08.1": {
@@ -136,14 +136,14 @@
     },
 
     "18.1": {
-      "nome": "informacao1",
+      "nome": "informacao_1",
       "posicao_inicio": 104,
       "posicao_fim": 143,
       "formato": "alfa"
     },
 
     "19.1": {
-      "nome": "informacao2",
+      "nome": "informacao_2",
       "posicao_inicio": 144,
       "posicao_fim": 183,
       "formato": "alfa"
