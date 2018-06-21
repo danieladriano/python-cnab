@@ -309,7 +309,7 @@
       "nome": "prazo_baixa",
       "posicao_inicio": 225,
       "posicao_fim": 227,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "42.3P": {
